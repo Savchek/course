@@ -19,7 +19,7 @@ const AddItem = ({ chosenDate, taskAdd, createId }) => {
 		e.preventDefault()
 
 		if (chosenDate !== new Date().toISOString().slice(0, 10) && !momental) {
-			alert('Задачі типу "з таймером" можна створювати лише в сьогоднішній даті')
+			alert('Задачі типу "з відліком" можна створювати лише в сьогоднішній даті')
 			return
 		}
 
@@ -102,7 +102,7 @@ const AddItem = ({ chosenDate, taskAdd, createId }) => {
 				<div className='task-create-type-choise'>
 					<p>Тип створення задачі: </p>
 					<p className='btn' onClick={switchMomental}>
-						{momental ? 'моментальний' : 'з таймером'}
+						{momental ? 'моментальний' : 'з відліком'}
 						<img src={cycle} alt='' />
 					</p>
 				</div>
