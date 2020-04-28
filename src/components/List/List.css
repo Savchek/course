@@ -1,13 +1,13 @@
 .task-list {
-	padding: 0 10px;
+	padding: 0 var(--px10);
 	box-shadow: 0px 3px 30px -15px black;
 }
 .task-list-item {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	padding: 10px 0;
-	padding-left: 10px;
+	padding: var(--px10) 0;
+	padding-left: var(--px10);
 	border-bottom: 1px solid var(--black);
 }
 
@@ -17,11 +17,11 @@
 
 .task-info {
 	margin-left: auto;
-	margin-right: 10px;
+	margin-right: var(--px10);
 }
 
 .task-info-item {
-	font-size: 16px;
+	font-size: var(--fs16);
 	color: var(--white-disabled);
 	display: flex;
 	flex-direction: row;
@@ -29,37 +29,38 @@
 	justify-content: space-between;
 }
 .task-info-item p:first-child {
-	margin-right: 10px;
+	margin-right: var(--px10);
 }
 
 .task-create-type-choise {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin-bottom: 20px;
+	margin-bottom: var(--px20);
 }
 
 .task-title {
-	font-size: 24px;
+	font-size: var(--fs24);
 }
 
 .task-duration {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	font-size: 20px;
+	font-size: var(--fs20);
 }
 
 .task-create-type-choise .btn {
 	margin-left: 5px;
 	width: auto;
-	padding: 0 20px;
+	padding: 0 var(--px20);
 	overflow: hidden;
 	position: relative;
 }
 
 .delete-task {
-	width: 50px;
+	width: var(--px50);
+	height: var(--px50);
 	position: relative;
 	padding: 0;
 }
@@ -80,7 +81,7 @@
 	position: absolute;
 	height: 100%;
 	opacity: .1;
-	right: 10px;
+	right: var(--px10);
 }
 
 .task-create-type-choise .btn:hover img {
@@ -93,30 +94,43 @@
 
 .addTask-wrap {
 	box-shadow: 0px 3px 30px -15px black;
-	padding: 10px;
-	margin-bottom: 20px;
+	padding: var(--px10);
+	margin-bottom: var(--px20);
 }
 
 .task-create-title {
-	font-size: 24px;
-	margin-bottom: 20px;
+	font-size: var(--fs24);
+	margin-bottom: var(--px20);
 	width: 100%;
 }
 
 .task-create-btn {
 	width: 100%;
-	height: 60px;
-	font-size: 22px;
+	height: var(--px60);
+	font-size: var(--fs22);
 }
 
 .task-create-time {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin-bottom: 20px;
+	margin-bottom: var(--px20);
 }
 
 .task-create-time input {
-	font-size: 16px;
-	margin: 0 10px;
+	font-size: var(--fs16);
+	margin: 0 var(--px10);
+}
+
+@media (max-width: 470px) { 
+	.task-create-time {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+}
+@media (max-width: 370px) { 
+	.task-create-type-choise {
+		flex-direction: column;
+		margin-bottom: 0;
+	}
 }

@@ -4,19 +4,30 @@
 	align-items: center;
 	justify-content: center;
 	box-shadow: 0px 3px 30px -15px black;
-	height: 60px;
-	margin-bottom: 20px;
+	height: var(--px60);
+	margin-bottom: var(--px20);
 	position: relative;
 	padding: 35px 0;
 }
 
 .salary-calc-show-btn {
 	position: absolute;
-	right: 10px;
+	right: var(--px10);
 }
 
 @media (max-width: 720px) { 
 	.main-header {
 		justify-content: flex-start;
+	}
+}
+@media (max-width: 470px) { 
+	.salary-calc-show-btn {
+		position: static;
+	}
+	.main-header {
+		justify-content: center;
+		flex-direction: column;
+		height: auto;
+		padding: 10px 0;
 	}
 }

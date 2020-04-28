@@ -24,8 +24,8 @@
 	position: absolute;
 	right: -65px;
 	top: -65px;
-	width: 30px;
-	height: 30px;
+	width: var(--px30);
+	height: var(--px30);
 	transition: .2s;
 	opacity: .8;
 }
@@ -35,7 +35,7 @@
 }
 
 .salary-calc-form {
-	padding: 30px;
+	padding: var(--px30);
 	background-color: var(--background);
 }
 
@@ -44,11 +44,11 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 30px;
+	margin-bottom: var(--px30);
 }
 
 .salary-rate-wrap input {
-	width: 60px;
+	width: var(--px60);
 	margin: 0 5px;
 }
 
@@ -56,11 +56,11 @@
 	display: flex;
 	align-items: center;
 	flex-direction: row;
-	margin-bottom: 20px;
+	margin-bottom: var(--px20);
 }
 
 .salary-calc-option label input {
-	margin-right: 10px;
+	margin-right: var(--px10);
 }
 
 .salary-calc-date {
@@ -68,15 +68,22 @@
 	align-items: center;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-bottom: 20px;
+	margin-bottom: var(--px20);
 }
 
 .salary-calc-btn {
 	margin: 0 auto;
-	margin-bottom: 20px;
+	margin-bottom: var(--px20);
 }
 
 .salary-calc-result {
-	font-size: 22px;
+	font-size: var(--fs22);
 	text-align: center;
+}
+
+@media (max-width: 720px) { 
+	.salary-calc-close-btn img {
+		right: -40px;
+		top: -40px;
+	}
 }

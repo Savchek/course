@@ -10,11 +10,16 @@
   --input-background: rgb(31, 34, 37);
   --white: rgb(210, 220, 230);
   --white-disabled: rgb(141, 145, 148);
-  --red: rgb(204, 109, 121);
-  --red-darker: rgb(119, 63, 71);
-  --blue: rgb(76, 106, 145);
-  --blue-darker: rgb(46, 64, 87);
-  --green-darker: rgb(51, 71, 59);
+  --fs16: 16px;
+  --fs18: 18px;
+  --fs20: 20px;
+  --fs22: 22px;
+  --fs24: 24px;
+  --px50: 50px;
+  --px60: 60px;
+  --px30: 30px;
+  --px20: 20px;
+  --px10: 10px;
 }
 
 * {
@@ -26,8 +31,8 @@
 body {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
-  padding-top: 20px;
+  padding: 0 var(--px10);
+  padding-top: var(--px20);
 }
 
 body, input, button {
@@ -36,7 +41,7 @@ body, input, button {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background);
   color: var(--white);
-  font-size: 18px;
+  font-size: var(--fs18);
 }
 
 input::placeholder {
@@ -45,7 +50,7 @@ input::placeholder {
 
 input {
   border: 1px solid var(--input-placeholder);
-  padding: 5px 10px;
+  padding: 5px var(--px10);
   background-color: var(--input-background);
   border-radius: 2px;
 }
@@ -59,11 +64,11 @@ button, .btn{
   align-items: center;
   justify-content: space-around;
   width: 200px;
-  height: 50px;
+  height: var(--px50);
   border: none;
   background-color: var(--btn);
   color: var(--white);
-  font-size: 18px;
+  font-size: var(--fs18);
   cursor: pointer;
   transition: .2s;
   border-radius: 2px;
@@ -79,4 +84,19 @@ button:active, .btn:active {
   border: none;
   box-shadow: none;
   outline: none;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --fs16: 12px;
+    --fs18: 14px;
+    --fs20: 16px;
+    --fs22: 18px;
+    --fs24: 20px;
+    --px60: 50px;
+    --px50: 30px;
+    --px30: 20px;
+    --px20: 10px;
+    --px10: 5px;
+  }
 }
