@@ -1,0 +1,16 @@
+.main-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px 3px 30px -15px black;
+	height: 60px;
+	margin-bottom: 20px;
+	position: relative;
+	padding: 35px 0;
+}
+
+.salary-calc-show-btn {
+	position: absolute;
+	right: 10px;
+}

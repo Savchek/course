@@ -1,0 +1,14 @@
+.datePicker input{
+	background-color: var(--background);
+	cursor: pointer;
+	transition: .2s;
+}
+
+.datePicker input:hover {
+	background-color: var(--input-placeholder);
+}
+
+#datePicker{
+	font-size: 24px;
+	border: none;
+}
