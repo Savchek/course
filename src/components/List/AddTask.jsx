@@ -23,7 +23,7 @@ const AddItem = ({ chosenDate, taskAdd, createId }) => {
 			return
 		}
 
-		if (momental && duration === '00:00:00') {
+		if (duration === '' || startTime === '' || (momental && duration === '00:00:00')) {
 			alert('Час не може бути нульовим')
 			return
 		}
