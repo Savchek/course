@@ -138,7 +138,7 @@ const SalaryCalc = ({ tasks, close }) => {
 				<div className='salary-rate-wrap'>
 					<p>Ставка:</p>
 					<input
-						type='text'
+						type='number'
 						value={salaryRate}
 						onChange={updateSalaryRate}
 					/>
