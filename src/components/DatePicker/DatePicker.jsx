@@ -1,7 +1,7 @@
 import React from 'react'
 import './DatePicker.css'
 
-const Popup = ({ chosenDate, setChosenDate }) => {
+const DatePicker = ({ chosenDate, setChosenDate }) => {
 
 	const changeDate = e => {
 		const newDate = e.target.value ? new Date(e.target.value) : new Date()
@@ -17,4 +17,4 @@ const Popup = ({ chosenDate, setChosenDate }) => {
 	)
 }
 
-export default Popup
+export default DatePicker

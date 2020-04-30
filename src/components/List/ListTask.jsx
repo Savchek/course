@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react'
 import cross from '../../icons/cross.svg'
 
-const ListItem = ({ item, taskDelete, taskDone }) => {
+const ListTask = ({ item, taskDelete, taskDone }) => {
 
 	const [duration, setDuration] = useState('00:00:00')
 	const taskTimer = useRef()
@@ -82,4 +82,4 @@ const ListItem = ({ item, taskDelete, taskDone }) => {
 	)
 }
 
-export default ListItem
+export default ListTask

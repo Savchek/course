@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './List.css'
 import cycle from '../../icons/cycle.svg'
 
-const AddItem = ({ chosenDate, taskAdd, createId }) => {
+const AddTask = ({ chosenDate, taskAdd, createId }) => {
 
 	const [title, setTitle] = useState('')
 	const [startTime, setStartTime] = useState('08:30:00')
@@ -133,5 +133,5 @@ const AddItem = ({ chosenDate, taskAdd, createId }) => {
 	)
 }
 
-export default AddItem
+export default AddTask
 

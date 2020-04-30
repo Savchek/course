@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import ListItem from './ListTasks'
+import ListTask from './ListTask'
 import AddTask from './AddTask'
 
 const List = ({ tasks, setTasks, chosenDate }) => {
@@ -77,7 +77,7 @@ const List = ({ tasks, setTasks, chosenDate }) => {
 		return upToDateTasks.length > 0 ? (
 			<ul className='task-list'>
 				{upToDateTasks.map(e => (
-					<ListItem
+					<ListTask
 						key={e.id}
 						item={e}
 						taskDelete={taskDelete}
