@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/course/static/css/main.94e35f22.chunk.css",
+    "main.css": "/course/static/css/main.225a0eac.chunk.css",
     "main.js": "/course/static/js/main.80138df9.chunk.js",
     "main.js.map": "/course/static/js/main.80138df9.chunk.js.map",
     "runtime-main.js": "/course/static/js/runtime-main.2817b438.js",
@@ -8,9 +8,9 @@
     "static/js/2.fff0c860.chunk.js": "/course/static/js/2.fff0c860.chunk.js",
     "static/js/2.fff0c860.chunk.js.map": "/course/static/js/2.fff0c860.chunk.js.map",
     "index.html": "/course/index.html",
-    "precache-manifest.da7c349bacca5d9e35baa78dbe229266.js": "/course/precache-manifest.da7c349bacca5d9e35baa78dbe229266.js",
+    "precache-manifest.95896e12b5ddf2f01a4bff244dbf40e7.js": "/course/precache-manifest.95896e12b5ddf2f01a4bff244dbf40e7.js",
     "service-worker.js": "/course/service-worker.js",
-    "static/css/main.94e35f22.chunk.css.map": "/course/static/css/main.94e35f22.chunk.css.map",
+    "static/css/main.225a0eac.chunk.css.map": "/course/static/css/main.225a0eac.chunk.css.map",
     "static/js/2.fff0c860.chunk.js.LICENSE.txt": "/course/static/js/2.fff0c860.chunk.js.LICENSE.txt",
     "static/media/cross.svg": "/course/static/media/cross.7d1873ed.svg",
     "static/media/cycle.svg": "/course/static/media/cycle.75a90539.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.2817b438.js",
     "static/js/2.fff0c860.chunk.js",
-    "static/css/main.94e35f22.chunk.css",
+    "static/css/main.225a0eac.chunk.css",
     "static/js/main.80138df9.chunk.js"
   ]
 }
