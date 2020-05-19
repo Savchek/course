@@ -41,6 +41,8 @@
 
 .task-title {
 	font-size: var(--fs24);
+	max-width: 80%;
+	overflow-wrap: break-word;
 }
 
 .task-duration {
